@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur.</p> 
+</body>
+</html>
+--------------------------------------------------------------------------------------------------------
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+p{
+    width: fit-content;
+    background-color: green;
+    position: relative;
+}
+/*p::before{
+    content:'>';
+}
+p::after{
+    content:'<';
+}*/
+/*p::before{
+    position: absolute;
+    top: 100%;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: red;
+}*/
+p::after{
+    position: absolute;
+    top: 100%;
+    content: '';
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: red;
+}
