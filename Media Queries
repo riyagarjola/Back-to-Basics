@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="parent">
+        <div id="child1"></div>
+        <div id="child2"></div>
+    </div>
+    
+    const ToogleDarkMode = () => {
+        const html = document.documentElement; 
+        html.classList.toggle("dark");
+        const darkmodeButton =  document.getElementById("dark-mode-btn");
+        if(darkmodeButton.innerHTML=="DarkMode"){
+          darkmodeButton.innerHTML = "LightMode";
+        }else{
+          darkmodeButton.innerHTML = "DarkMode";
+        }
+    } 
+</body>
+</html>
+-----------------------------------------------------------------------------------------------
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#parent{
+    min-height: 100%;
+    width: 100%;
+    background-color: crimson;
+}
+#child1{
+    height: 100vh;
+    width: 60%;
+    background-color: lightblue;
+}
+#child2{
+    height: 100vh;
+    width: 60%;
+    background-color: rgb(230, 173, 201);
+}
