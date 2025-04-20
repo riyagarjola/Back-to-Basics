@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box">-</div>
+</body>
+</html>
+-------------------------------------------------------------------------------------------------
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#box{
+    height: 400px;
+    width: 400px;
+    background-color: crimson;
+    position: absolute;
+    animation-name:anime;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+@keyframes anime {
+    from{
+        left: 0;
+        background-color: red;
+        rotate: 0;
+    }
+    to{
+        left: 60%;
+        rotate: 360deg;
+        background-color: blue;
+    }
+}
