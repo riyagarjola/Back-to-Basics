@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="https://cdn.dribbble.com/userupload/29640083/file/original-bc0ad08a288c65c8eaede5ab371d9b27.jpg?resize=400x0" alt="">
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------------------------------------------
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family: 'Gilroy';
+}
+img{
+    height: 200px;
+    position: absolute;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+@keyframes anime{
+  0%{
+    left: 0;
+    top: 0;
+    rotate: 0deg;
+}
+  50%{
+    left: 80%;
+    top: 0;
+    rotate: 0deg;
+  }
+  100%{
+    left: 80%;
+    right: 50%;
+    rotate: 360deg;
+  }
+}
