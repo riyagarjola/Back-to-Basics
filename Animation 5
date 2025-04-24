@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button>Start Now</button>
+</body>
+</html>
+--------------------------------------------------------------------------------------------------
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: black;
+    padding: 5vw;
+}
+button{
+   padding: 10px 20px;
+   background-color: transparent;
+   border: 2px solid cyan;
+   color: cyan;
+   font-weight: 600;
+   transition: all linear 0.5s;
+   position: relative;
+   overflow: hidden;
+ 
+}
+button::after{
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(0, 149, 255);
+    position: absolute;
+    left: 50;
+    top: 50;
+    transform: translate(-50%,-50%) scale(0);
+    transition: all linear 0.5s;
+    z-index: -1;
+}
+button:hover::after{
+   transform: translate(-50%,-50%) scale(4);
+}
+button:hover{
+    color: black;
+}
